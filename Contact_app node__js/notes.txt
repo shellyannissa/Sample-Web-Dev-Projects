@@ -1,0 +1,93 @@
+require(<file path within quotations >)
+//to include the file
+const add=(a,b)=>{
+    return a+b;
+}
+
+the format of specifying a module
+
+to export only a specific funtionality 
+module.exports==<function_name_without_params>;
+
+in the loading file 
+const fn=require('<file_path>');
+each modele has its own scope ie no issue with conflicting names in 
+different modules
+
+(fn(){
+    content
+})()
+enclosing within parenthesis and quickly followed by a parenthesis to invole the function immediately
+
+module caching is done for bettter performance
+is an instance of a class is loaded the recently updated value is what is accessed not necessarily the one 
+that the export statement had specified in the export file
+
+to export multiple functions just convert them to classes
+
+model.exports={
+    add=add;
+    subtract=subtract;
+}
+
+use the . operator in the required file to acces each function specifically
+console.log(import.add(2,3));
+
+or 
+const {add,subtract}=require("./math");
+
+
+in javascript assigning one object to another cretes another reference only that is they both point to the same object ,changes made to one will reflect onto another
+if assigned as 
+const obj1=obj2
+
+other way around it is to use let keyword
+
+let obj2=obj1;
+obj2={
+    name="Klark Kent";
+}
+
+this was the common js method of importing modules
+
+ECMA MODULE format
+save file as .mjs both importing and exporting
+
+in the module file 
+export default add;
+int the other file 
+import add from "file_path"
+export default could be used in line as instead of the name of the function
+
+also exporing as object works 
+export default{
+    add:add;
+    subtract:subtract;
+}
+
+BUILTIN modules
+const path=require("node:path");
+console.log(path.basename(__filename));//returns the last part of the filepath thatis the filename here
+.extname
+path.parse-splits the path into parts 
+root,basename
+extname
+name
+
+path.format performs the opp forms pathname from parse components
+.isAbsolute 
+path.join("root","directory","filename");
+returns root/directory/filename also normalises the input strings so as to form a path ie removing extra / and .
+
+
+stream module
+const fs=require('node:fs');
+const readablestream=fs.createReadStream('./file1.txt',{
+    encoding:"utf-8";
+})
+constwriteablestream=fs.createWriteStream('text2.txt');
+readablestream.on("data",(chunk)=>{
+    console.log(chunk);
+    writeableStream.write(chunk);
+}
+//derived from emitter class data is transferred and writen as chunks

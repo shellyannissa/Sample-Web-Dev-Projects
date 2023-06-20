@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My HTML page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                
+                <!-- <i class="fa-regular fa-circle-xmark"></i> -->
+                <ul>
+                    <!-- <li><i class="fa-regular fa-circle-xmark"></i></li> -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+            </div>
+        </nav>
+        
+    <div class="text-box">
+        <h1>About us</h1>
+
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Established since the advent of British Rule in India 
+                    We have managed to uphold values such as honesty , courage, vivacity
+                    in the young minds through time immemmorial
+                    We have students from across the globe who come real far to get the quality 
+                    education we believe everyone deserves .But despite al this goowill nothing 
+                    is going to last long here as we are outnumbered one to ten.
+                </p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+
+<section class="footer">
+    <h4>About us</h4>
+    <p>We are a non profit organisation that has been established since
+        1974 by sir Rupert Grunt
+    </p>
+    <div class="icons">
+        <i class="class">"fa fa-facebook"</i>
+        <i class="class">"fa fa-twitter"</i>
+        <i class="class">"fa fa-instagram"</i>
+        <i class="class">"fa fa-linkedin"</i>
+    </div>
+</section>
+</body>
+</html>

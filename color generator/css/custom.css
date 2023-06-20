@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Mynerve', cursive;
+font-family: 'Poppins', sans-serif;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@0,500;1,700&display=swap');
+
+body{
+    transition:1s;
+}
+.main{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:30rem;
+    /* height:15rem; */
+    padding:10px;
+    border-radius:10px;
+    background-color:white;
+    font-size:40px;
+    text-align:center;
+}
+button{
+    width:100%;
+    margin-top:5px;
+    background-color:black;
+    color:white;
+    display:block;
+    border:none;
+    border-radius:5px;
+    font-size:25px;
+}

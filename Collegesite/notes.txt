@@ -1,0 +1,11 @@
+position:absolute;
+supposed to specify the location of one object relative to which other elements could be specified
+
+
+div within section 
+gave class name as row and change it to 
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+    {
+}

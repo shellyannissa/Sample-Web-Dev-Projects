@@ -1,0 +1,3 @@
+use middleware app.use(express.json()); to be able to handle json posts to the api
+
+body.params instead of query 

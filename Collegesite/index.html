@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My HTML page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Poppins:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
+                
+                <!-- <i class="fa-regular fa-circle-xmark"></i> -->
+                <ul>
+                    <!-- <li><i class="fa-regular fa-circle-xmark"></i></li> -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+            </div>
+        </nav>
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Learning to make a website is now such an easy thing.
+           With a basic understanding of html css and javascript <br>anyone could chose to be a web developer. </p>
+        <a href="" class="hero-btn" >Click here to know more</a>
+        </div>
+    </section>
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Here are the list of courses that we offer here.
+         Come in to learn go out to serve</p>
+        <div class="row">
+         <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Now this is an interesting course we have to offer
+                Everyone despite their age is welcome to attend this.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Now this is an interesting course we have to offer
+                Everyone despite their age is welcome to attend this.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Now this is an interesting course we have to offer
+                Everyone despite their age is welcome to attend this.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Now that things are perhaps moving forward 
+        I would like to make an announcement that whoever 
+        is willing to come forward can choose the course that he is most 
+        interested in
+    </p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>We provide a wide range of facilites such as sports and 
+        co curricular acitivities
+    </p>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Syntetically refurbished Ground</h3>
+            <p>The Library has a collection of over a Lakh books
+                Books are your friends forever
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/library.jpeg">
+            <h3>World Class Library</h3>
+            <p>The Library has a collection of over a Lakh books
+                Books are your friends forever
+            </p>
+        </div>
+        
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>The Library has a collection of over a Lakh books
+                Books are your friends forever
+            </p>
+        </div>
+    </div>
+</section>
+<section class="testimonials">
+    <h1>What our Students say</h1>
+    <p>Perfect environment for not just intellectual but emotional and social growth</p>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="images/user1.jpg">
+            <p>Love the College.I wouldn't have went on to become what I am today 
+                if not for this college.will forever be grateful to the faculties for 
+                the continuous support and unfaltering agenda to serve
+            </p>
+            
+            <h3>Chrisina Kingsley</h3>
+        </div>
+        <div class="testimonials-col">
+            <img src="images/user2.jpg">
+            <p>Love the College .I wouldn't have went on to become what I am today 
+                if not for this college.will forever be grateful to the faculties for 
+                the continuous support and unfaltering agenda to serveh                
+               </p>
+
+            <h3>John Blake</h3>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h1>Enroll For Our various Online Courses Anywhere From the World</h1>
+    <a href="" class="hero-btn">CONTACT US   </a>
+</section>
+<section class="footer">
+    <h4>About us</h4>
+    <p>We are a non profit organisation that has been established since
+        1974 by sir Rupert Grunt
+    </p>
+    <div class="icons">
+        <i class="class">"fa fa-facebook"</i>
+        <i class="class">"fa fa-twitter"</i>
+        <i class="class">"fa fa-instagram"</i>
+        <i class="class">"fa fa-linkedin"</i>
+    </div>
+</section>
+</body>
+</html>
